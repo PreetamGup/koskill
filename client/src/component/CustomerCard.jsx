@@ -20,7 +20,7 @@ const CustomerCard = ({customer, allCustomerData}) => {
     e.preventDefault();
 
     try {
-      const response = await axios.put(`http://localhost:5050/api/customer/updateCustomer/${cusId}`,{name, email, phone, address}, {headers:{
+      const response = await axios.put(`https://koskill-9gt8.onrender.com/api/customer/updateCustomer/${cusId}`,{name, email, phone, address}, {headers:{
       Authorization: "Bearer " + localStorage.getItem("auth"),
       }})
     
@@ -46,7 +46,7 @@ const CustomerCard = ({customer, allCustomerData}) => {
 
   const handleDelete=async(cusId)=>{
     try {
-      const response = await axios.delete(`http://localhost:5050/api/customer/deletecustomer/${cusId}`, {headers:{
+      const response = await axios.delete(`https://koskill-9gt8.onrender.com/api/customer/deletecustomer/${cusId}`, {headers:{
       Authorization: "Bearer " + localStorage.getItem("auth"),
       }})
     

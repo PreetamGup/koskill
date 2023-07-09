@@ -19,7 +19,7 @@ const NewCustomer = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:5050/api/customer/addnewCustomer`,{name, email, phone, address}, {headers:{
+      const response = await axios.post(`https://koskill-9gt8.onrender.com/api/customer/addnewCustomer`,{name, email, phone, address}, {headers:{
         Authorization: "Bearer " + localStorage.getItem("auth"),
         }})
       

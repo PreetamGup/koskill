@@ -21,7 +21,7 @@ const Login = () => {
         password,
       };
 
-     const res= await axios.post('http://localhost:5050/api/user/login', loginData);
+     const res= await axios.post('https://koskill-9gt8.onrender.com/api/user/login', loginData);
      console.log(res)
 
      if(res.data.success){

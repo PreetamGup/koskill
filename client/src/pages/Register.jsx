@@ -16,7 +16,7 @@ function Register() {
 
     try {
       // const response = await axios.post('http://localhost:5050/api/user/register', {name, email, password, image:JSON.stringify(image), file});
-      const response = await axios.post('http://localhost:5050/api/user/register', {name, email, password});
+      const response = await axios.post('https://koskill-9gt8.onrender.com/api/user/register', {name, email, password});
 
       console.log(response)
       if (response.data.success) {

@@ -15,7 +15,7 @@ const Home = () => {
   const allCustomerData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5050/api/customer/allcustomer",
+        "https://koskill-9gt8.onrender.com/api/customer/allcustomer",
         {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("auth"),
